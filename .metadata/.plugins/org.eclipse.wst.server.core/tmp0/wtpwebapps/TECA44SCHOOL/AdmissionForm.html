@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+div
+{
+  border:3px solid black;
+  width: 460px;
+  height:600px;
+  background-color:yellow;
+  margin-left: 450px;
+  margin-top: 30px;
+  
+}
+h1
+{
+  font-size: 28px;
+  color: brown;
+}
+.s1
+{
+  font-size: 25px;
+  color: blue;
+  padding-left: 30px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+#s2
+{
+  font-size: 25px;
+  color: blue;
+  padding-left:2px;
+  padding-right:4px;
+  margin-left: 2px;
+  margin-bottom: 10px;
+}
+label
+{
+  font-size: 22px;
+  color: blue;
+  margin-left: 9px;
+}
+span
+{
+  font-size: 25px;
+  color: red;
+  margin-left: 10px;
+}
+#checkbox
+{
+ font-size: 35px;
+}
+#head
+{
+  margin-left:8px;
+}
+#gender
+{
+ margin-left: 80px;
+}
+#s3
+{
+  margin-left: 80px;
+}
+#sub
+{
+  font-size: 28px;
+  margin-left: 158px;
+}
+</style>
+</head>
+<body>
+<form action="AdmissionForm">
+<div>
+<h1 id="head">STUDENT REGISTRATION FORM</h1>
+<br>
+
+<input placeholder="Enter Student Name" name="sname" class="s1"><br>
+<input type="number"placeholder="Enter  Mobile Number" name="smobile" class="s1"><br>
+<input type="email"placeholder="Enter Student EmailId" name="semail" class="s1"><br>
+<input type="password" placeholder="Enter password" name="password" class="s1"><br>
+<label>STUDENT DOB:</label><input type="date" placeholder="Enter  Date of Birth" name="Dob" id="s2"><br>
+
+<h1 id="gender">Gender</h1>
+<input type="radio" name="gender" id="s3"><span>Male</span><input type="radio" name="gender" id="s3"><span>Female</span>
+
+<br><br><br>
+<label>SELECT_CLASS :</label>
+<select name="select">
+<option >SelectClass</option>
+<option name="first">I</option>
+<option name="second">II</option>
+<option name="third ">III</option>
+<option name="fourth">IV</option>
+<option name="fifth ">V</option>
+<option name="six">VI</option>
+<option name="seven">VII</option>
+<option name="eight">VIII</option>
+<option name="nine">IX</option>
+<option name="ten">X</option>
+</select>
+<br><br><br>
+<input type="checkbox" name="check" id="checkbox"><span>Terms And Conditions</span>
+<br><br>
+<input type="submit" id="sub">
+
+
+</div>
+</form>
+</body>
+</html>

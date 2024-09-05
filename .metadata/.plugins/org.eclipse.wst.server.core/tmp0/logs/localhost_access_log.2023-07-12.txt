@@ -1,0 +1,11 @@
+127.0.0.1 - - [12/Jul/2023:12:07:08 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [12/Jul/2023:12:07:10 +0530] "GET /MechBank/MechBank.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Jul/2023:12:07:11 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [12/Jul/2023:12:07:21 +0530] "GET /MechBank/Withdraw.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Jul/2023:12:07:26 +0530] "GET /MechBank/CheckBalance.html HTTP/1.1" 200 852
+0:0:0:0:0:0:0:1 - - [12/Jul/2023:12:07:35 +0530] "POST /MechBank/CheckBalance HTTP/1.1" 200 932
+0:0:0:0:0:0:0:1 - - [12/Jul/2023:12:07:47 +0530] "GET /MechBank/Credit.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Jul/2023:12:07:51 +0530] "GET /MechBank/MobileTransaction.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Jul/2023:12:07:56 +0530] "POST /MechBank/MobileTransaction HTTP/1.1" 200 755
+0:0:0:0:0:0:0:1 - - [12/Jul/2023:12:08:01 +0530] "POST /MechBank/ReceiverAccount HTTP/1.1" 200 583
+0:0:0:0:0:0:0:1 - - [12/Jul/2023:12:08:04 +0530] "POST /MechBank/SendAmount HTTP/1.1" 200 631

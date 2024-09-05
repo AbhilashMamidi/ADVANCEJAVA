@@ -1,0 +1,15 @@
+package com.jsp.bank;
+
+import java.sql.Connection;
+
+public class BankTransactionImpt implements BankTransaction 
+{
+   private Connection connection;
+   String url="jdbc:mysql://localhost:3306/teca44?user=root&password=12345";
+   @Override
+	public void credit() {
+		// TODO Auto-generated method stub
+
+	}
+   
+}

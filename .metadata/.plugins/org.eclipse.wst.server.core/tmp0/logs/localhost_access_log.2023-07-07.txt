@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [07/Jul/2023:11:38:47 +0530] "GET /JspJavaServerPage/ArmstrongNumber.jsp?OneNumber=123 HTTP/1.1" 404 749
+0:0:0:0:0:0:0:1 - - [07/Jul/2023:11:39:12 +0530] "GET /MechBank/MechBank.html HTTP/1.1" 200 2232
+0:0:0:0:0:0:0:1 - - [07/Jul/2023:11:46:58 +0530] "GET /MechBank/MobileTransaction.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [07/Jul/2023:11:48:31 +0530] "POST /MechBank/MobileTransaction HTTP/1.1" 200 755
+0:0:0:0:0:0:0:1 - - [07/Jul/2023:11:48:31 +0530] "POST /MechBank/MobileTransaction HTTP/1.1" 200 755
+0:0:0:0:0:0:0:1 - - [07/Jul/2023:11:48:31 +0530] "POST /MechBank/MobileTransaction HTTP/1.1" 200 755
+0:0:0:0:0:0:0:1 - - [07/Jul/2023:11:48:31 +0530] "POST /MechBank/MobileTransaction HTTP/1.1" 200 755
+0:0:0:0:0:0:0:1 - - [07/Jul/2023:11:48:31 +0530] "POST /MechBank/MobileTransaction HTTP/1.1" 200 755
+0:0:0:0:0:0:0:1 - - [07/Jul/2023:11:48:42 +0530] "POST /MechBank/ReceiverAccount HTTP/1.1" 200 583
+0:0:0:0:0:0:0:1 - - [07/Jul/2023:11:48:48 +0530] "POST /MechBank/SendAmount HTTP/1.1" 200 783

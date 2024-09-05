@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+input
+{
+  color:yellow;
+  width: 200px;
+  height: 20px;
+  padding:5px;
+  margin:8px;
+  font-size: 20px;
+}
+div
+{
+  background:blue;
+  width:280px;
+  height: 550px;
+  margin:200px;
+  padding:30px;
+  margin-left: 400px;
+  
+}
+#checkbox
+{
+ margin-left: 20px;
+}
+#sub
+{
+font-size: 25px;
+padding: 18px;
+
+}
+
+h1
+{
+font-size: 23px;
+}
+
+</style>
+</head>
+<body>
+<div >
+<form action="RegistrationForm2">
+      <input placeholder="Enter Your Name" name="name" >
+      <br>
+      <input placeholder="Enter Your Number" name="mobile">
+      <br>
+       <input placeholder="Enter Your EmialId" name="email">
+      <br>
+       <input placeholder="Enter Your Password" name="password">
+      <br>
+
+
+<h1 style="color:white;">Gender </h1>
+   <input type="radio" name="gender" value="Male" ><label>Male</label>
+  <input type="radio" name="gender" value="Female" > <label>Female</label>
+    
+<table>
+<tr>
+<td style="color:white"> Select Course
+<select name="course" value="course">
+  <option>select Course</option>
+   <option value="Java">JAVA</option>
+   <option value="core java">Core Java</option>
+   <option value="Advance Java">Advance Java</option>
+   <option value="sql">SQl</option>
+</select>
+</td>
+</tr>
+
+</table>
+<input type="checkbox" name="check" value="checked" style="color:white" id="checkbox"><h1 style="color:">
+<label>Terms and conditions..</label>
+
+<input type="submit" id="sub">
+</form>
+</div>
+
+</body>
+</html>

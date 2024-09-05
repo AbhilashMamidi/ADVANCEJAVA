@@ -1,0 +1,5 @@
+package com.jsp.bank;
+
+public class BankTransactionImpt implements BankTransaction {
+
+}

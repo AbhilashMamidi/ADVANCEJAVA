@@ -1,0 +1,98 @@
+package com.jsp.bank;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class BankDaoImpt implements BankDao {
+
+	@Override
+	public void credit() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void debit() {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter mobile number");
+		String mobile=scan.next();
+		System.out.println("Enter password");
+		String password=scan.next();
+		
+		String url="jdbc:mysql://localhost:3306/teca44?user=root&password=12345";
+		String select ="select * from  bankaccount where mobile =? and password=?" ;
+		try {
+			  Connection connection= DriverManager.getConnection(url);
+			  boolean status=true;
+				while(status)
+				{
+			  PreparedStatement ps =connection.prepareStatement(select);
+			  ps.setString(1, mobile);
+			  ps.setString(2, password);
+			  ResultSet rs=ps.executeQuery();
+			  if( rs.next())
+			  {
+				 System.out.println("Enter the amount");
+				 double uamount=scan.nextDouble();
+				 if(uamount>=0)
+				 {
+					 double damount=rs.getDouble(4);
+					 if (damount>=uamount)
+					 {
+						 double sub=damount-uamount;
+						 String update="update bankaccount set amount=? where mobile=?";
+						 PreparedStatement ps1 =connection.prepareStatement(update);
+						 ps1.setDouble(1, sub);
+						 ps1.setString(2, mobile);
+						 int result=ps1.executeUpdate();
+						 if(result>0)
+						 {
+							 System.out.println("Amount Debited Successfully");
+						 }
+						 else
+						 {
+							 System.out.println("Server Down");
+						 }
+					 }
+					 else
+					 {
+						 System.out.println("Insufficient Balance");
+					 }
+				 }
+				 else
+				 {
+					 System.out.println("Invalid Amount");
+				 }
+			  }
+               						 
+		    }
+		}
+		catch (SQLException e) 
+		{
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void mobileTransaction() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void balanceCheck() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void changePin() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v9.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v9.0 Server at localhost" name="Tomcat v9.0 Server at localhost" runtime-id="Apache Tomcat v9.0" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="28">
+    <list key="modules" value0="EmployeeProject::org.eclipse.jst.jee.server:EmployeeProject::jst.web::3.0" value1="SecondWebProject::org.eclipse.jst.jee.server:SecondWebProject::jst.web::3.0" value2="TECA44SCHOOL::org.eclipse.jst.jee.server:TECA44SCHOOL::jst.web::3.0" value3="httpservlet::org.eclipse.jst.jee.server:httpservlet::jst.web::3.0" value4="session::org.eclipse.jst.jee.server:session::jst.web::3.0" value5="OtpValidation::org.eclipse.jst.jee.server:OtpValidation::jst.web::3.0" value6="MechBank::org.eclipse.jst.jee.server:MechBank::jst.web::3.0" value7="JspJavaServerPage::org.eclipse.jst.jee.server:JspJavaServerPage::jst.web::3.0"/>
+  </server>
+</servers>
